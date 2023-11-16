@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bill Desk</title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>Bill Desk Application</h1>
+        <div id="clerk-section">
+            <h2>Clerk</h2>
+            <label for="item">Item:</label>
+            <input type="text" id="item" placeholder="Enter item">
+            <button onclick="addItem()">Add Item</button>
+            <button onclick="checkout()">Checkout</button>
+            <button onclick="saveBill()">Save Bill</button>
+        </div>
+        <div id="supervisor-section">
+            <h3>Supervisor</h3>
+            <button onclick="viewSummary()">View Summary</button>
+            <button onclick="viewClerks()">View Clerks</button>
+            <button onclick="viewPayments()">View Payments Summary</button>
+        </div>
+        <div id="output">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
